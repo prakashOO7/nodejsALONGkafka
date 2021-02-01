@@ -1,0 +1,33 @@
+First in this project, I have created a package.json file
+
+//npm init
+
+Next, I have created three server.properties files inorder to start 3 brokers in the cluster.
+->Start Zookeeper first.(2181)
+->Start 3 Brokers Next.(9092,9093,9094)
+->* If needed we can create a topic in the cluster with required number of partitions and replication factor to put in messages.
+
+//Check notes for the commands
+
+Next, I have downloaded the required dependencies into the project.
+
+//npm install kafkajs chance
+
+Next, I have created the producer. It sends messages to two topics here. One is static with name 'districts', other is dynamic with name 'profession' and the messages into this profession topic is sent periodically by producer using the chance library method.
+
+//check producer.js for code.
+//steps could be seen as //1 //2 etc., indicating the order in which the code is written.
+
+Next start the producer.
+
+//node producer.js
+
+Next I have created consumer. It subscribes to a particular topic and the messages could be read from there.Start the consumer.
+
+//check consumer.js for the code.
+//node consumer.js
+
+THATS IT FROM prakashOO7.
+
+Thanks 
+--RaBan.

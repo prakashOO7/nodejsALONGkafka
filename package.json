@@ -1,0 +1,15 @@
+{
+  "name": "nodekafka",
+  "version": "1.0.0",
+  "description": "a node js kafka project with producer and consumer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ramprakash B",
+  "license": "ISC",
+  "dependencies": {
+    "chance": "^1.1.7",
+    "kafkajs": "^1.15.0"
+  }
+}
